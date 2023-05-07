@@ -19,7 +19,17 @@ export default function Post(props){
         setLikes(Number(NumeroLikes)-1);
       }
     }
-    
+    function mudarHeart2(){
+      if(heart === 'heart-outline' ){
+        setHeart('heart');
+        setLikes(Number(NumeroLikes)+1);
+
+      } else {
+
+      }
+    }   
+
+
     function mudarBookMark(){
       if(bookmark === 'bookmark-outline' ){
         setBookMark('bookmark')
@@ -42,7 +52,7 @@ export default function Post(props){
         </div>
 
         <div class="conteudo">"
-          <img src={postImg} alt={userName} onClick={mudarHeart} data-test="post-image"/>
+          <img src={postImg} alt={userName} onClick={mudarHeart2} data-test="post-image"/>
         </div>
 
         <div class="fundo">
